@@ -358,7 +358,7 @@ body.transition-active .my-work {
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside cards */
   margin: 10px; /* Margin between cards */
-  width: calc(60% - 20px); /* Set width to 50% minus margin for two cards per row */
+  width: calc(65% - 20px); /* Set width to 50% minus margin for two cards per row */
   max-width: 600px; /* Max width of cards */
   text-align: center; /* Center text inside cards */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
@@ -510,7 +510,7 @@ textarea {
   .services-list {
     padding: 20px; /* Less padding for smaller screens */
     width: 90%; /* Make it responsive */
-    height: 293px;
+    height: 300px;
   }
 
   .services-list li {
