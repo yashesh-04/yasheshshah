@@ -510,7 +510,7 @@ textarea {
   .services-list {
     padding: 20px; /* Less padding for smaller screens */
     width: 90%; /* Make it responsive */
-    height: 300px;
+    height: 310px;
   }
 
   .services-list li {
