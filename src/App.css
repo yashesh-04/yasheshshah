@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Basic scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light grey background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Dark grey for the scroll thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f1f1f1; /* Light grey border for contrast */
+}
+
+/* Hover effect for scroll thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker grey on hover */
+}
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.navigation {
+  position: sticky;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  padding: 10px;
+  margin: 15px;
+  justify-content: space-between; /* Distribute space between child elements */
+}
+
+
+.navigation-logo{
+  margin-right: auto;
+}
+
+nav {
+  padding-top: 15px;
+  flex-grow: 1; /* Allow the nav to take up available space */
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  box-shadow: 0.5px 2px 10px rgba(0, 0, 0, 0.39);
+  width: 500px;
+  height: 50px;
+  padding:0 10px;
+}
+
+ul a{
+  color: black;
+  text-decoration: none;
+  margin: auto;
+}
+
+.dark-mode{
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.dark-mode:hover{
+  /* background-color: black; */
+  fill: white;
+}
+
+
+.contact-button{
+  background-color: transparent;
+  border: 0.5px solid black ;
+  height: 45px;
+  width: 110px;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.contact-button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.main{
+  margin-top: 35px;
+  text-align: center;
+  height: 720px;
+  scroll-behavior: smooth;
+}
+
+.main img{
+  height: 180px;
+  border-radius: 100%;
+}
+
+.main img:hover{
+  margin: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all .2s ease-in ;
+  box-shadow: 2px 2px black;
+}
+
+.intro{
+  padding: 20px;
+  font-weight: 500;
+}
+.designation{
+  padding: 0px;
+  font-weight: 500;
+}
+.description{
+  padding: 10px;
+  font-weight: 500;
+}
+
+.contact-me{
+  font-weight: 500;
+  color: white;
+  height: 35px;
+  width: 129px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff006a 0%, #ff9900 99%, #8c45ff 100%);
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.contact-me:hover{
+  box-shadow: 0px 0px 10px rgb(255, 65, 65);
+  transition: 0.1s ease-in;
+}
+
+.my-resume{
+  border-radius: 20px;
+  border: 0.1px solid black;
+  height: 35px;
+  width: 135px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.my-resume:hover{
+  box-shadow: 0px 0px 10px rgb(255, 65, 65);
+  transition: 0.1s ease-in;
+}
+
+
+.main{
+  margin-bottom: 0;
+}
+
+.heading {
+  width: 100%;
+  font-weight: 800;
+  margin-left: 0; /* Reset the margin-left property */
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.para{
+  padding: 0px 20px;
+  margin: 30px 40px;
+  font-size: 18px;  
+}
+
+.me{
+  color: #FF4500;
+  width: 100%;
+  font-weight: 800;
+  margin-left: 0; /* Reset the margin-left property */
+  text-align: center;
+  font-size: 40px;
+  stroke-width: 10px;
+}
+
+.A{
+  padding-top:10px;
+}
+.A a{
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.TCS{
+  color:blue;
+  font-weight: 900;
+}
+.ignite{
+  font-weight: 900;
+}
+
+.about {
+  margin-bottom: 150px;
+  transition: 1s ease-in-out;
+  color: #333333;
+}
+
+.arrow{
+  font-weight: bolder;
+}
+
+body {
+  transition: background-color 1s ease-in-out;
+}
+
+.transition-active {
+  background-color: #f7e38c;
+}
+
+.about {
+  margin-bottom: 210px;
+  transition: 1s ease-in-out;
+  color: #333333;
+  /* background-color: #F5F5DC; Soft Beige */
+}
+
+.heading {
+  width: 100%;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+}
+
+.me {
+  color: #FF4500;
+}
+
+.para {
+  padding: 0px 20px;
+  margin: 30px 40px;
+  font-size: 18px;
+}
+
+.arrow {
+  font-weight: bolder;
+}
+
+.services {
+  margin-bottom: 200px; /* Adjust for spacing between sections */
+  margin-top: 180px;
+  color: #333333; /* Text color */
+  /* background-color: white; Background color */
+  padding: 20px; /* Add some padding */
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+.heading {
+  width: 100%;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 40px;
+  text-align: center;
+  height: 85px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.services-list ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: 500; */
+}
+
+.services-list li {
+  font-size: 20px;
+  font-weight: 600;
+  /* 
+  margin-bottom: 25px;
+  height: 90px;
+  width: 1000px; /* Set a width for the list */
+  /*margin: 0 auto; Center horizontally using margin auto */
+}
+
+.ces{
+  color: #FF4500;
+  font-weight: 900;
+}
+
+
+.my-work {
+  margin-bottom: 250px; /* Adjust for spacing between sections */
+  color: #333333; /* Text color */
+  background-color: white; /* Default background color */
+  padding: 20px; /* Add some padding */
+  /* Set a width for the section */
+  margin: 0 auto; /* Center horizontally */
+  transition: background-color 1s ease-in-out; /* Transition for background color */
+}
+
+body.transition-active .my-work {
+  background-color: #f7e38c; /* Background color when active */
+}
+
+
+.heading {
+  width: 100%;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px; /* Adjust font size for the heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.projects {
+  display: flex; /* Use Flexbox for project cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center cards horizontally */
+  margin: 0; /* Optional: remove margin if needed */
+}
+
+.project-card {
+  background-color: #f9f9f9; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  margin: 10px; /* Margin between cards */
+  width: calc(60% - 20px); /* Set width to 50% minus margin for two cards per row */
+  max-width: 600px; /* Max width of cards */
+  text-align: center; /* Center text inside cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+
+.project-title {
+  font-weight: 700; /* Bold project titles */
+  font-size: 24px; /* Title font size */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.project-description {
+  font-size: 16px; /* Description font size */
+  margin-bottom: 10px; /* Space below description */
+}
+
+.project-link {
+  color: #FF4500; /* Link color */
+  text-decoration: underline; /* Underline the link */
+}
+
+.project-link:hover {
+  color: #FF6F61; /* Change color on hover */
+}
+
+
+/* ContactMe.css */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin: auto; /* Center the form on the page */
+  padding: 20px;
+   /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+   /* Shadow for depth */
+  margin-bottom: 150px;
+  margin-top: 200px;
+}
+
+form input{
+  width: 300px;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.contact-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.068);
+  border-radius: 5px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+ }
+
+.submit-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3e8e41;
+}
+
+.container{
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+
+@media (max-width: 768px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  /* Show the menu when it's active (triggered by the button) */
+  .nav-active ul {
+    display: flex;
+  }
+
+  /* Styles for the menu toggle button */
+  .menu-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Adjust to fit before the "Contact Me" button */
+  }
+
+  .menu-button:hover {
+    background-color: #555;
+  }
+
+  /* Adjust the "Contact Me" button position */
+  .contact-me {
+    margin-left: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .services {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .services-list {
+    padding: 20px; /* Less padding for smaller screens */
+    width: 90%; /* Make it responsive */
+    height: 293px;
+  }
+
+  .services-list li {
+    font-size: 18px; /* Slightly smaller font size for readability */
+    margin-bottom: 10px; /* Add space between list items */
+  }
+
+  .para {
+    font-size: 16px; /* Adjust font size for paragraphs */
+    margin: 20px; /* Adjust margin for better spacing */
+  }
+
+  .heading {
+    font-size: 32px; /* Adjust heading font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 28px; /* Further reduce heading size for very small screens */
+  }
+
+  .para {
+    font-size: 14px; /* Reduce paragraph size for very small screens */
+  }
+}
