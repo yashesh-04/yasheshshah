@@ -9,7 +9,7 @@ import Main2 from './components/Main2'
 import Main3 from './components/Main3'
 import Main4 from './components/Main4'
 import ContactForm from './components/Main5';
-import Main4 from './components/CodeDisplay'
+
 
 
 
@@ -19,14 +19,14 @@ export default function App(){
   
   return (
     <>
-      <p>Hi there</p>
+     
       <Navigation/>
       <Main1 />
       <Main2 />
       <Main3 />
       <Main4 />
       <ContactForm />
-      <CodeDisplay />
+     
     </>
   )
 }
