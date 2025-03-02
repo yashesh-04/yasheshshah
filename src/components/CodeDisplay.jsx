@@ -7,13 +7,7 @@ const CodeDisplay = () => {
           <button className="checkout-btn" onClick={checkout}>
             Checkout
           </button>
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default CartPage;     
+          
 `;
 
   return (
