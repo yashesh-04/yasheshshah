@@ -19,6 +19,7 @@ export default function App(){
   
   return (
     <>
+      <p>Hi there</p>
       <Navigation/>
       <Main1 />
       <Main2 />
