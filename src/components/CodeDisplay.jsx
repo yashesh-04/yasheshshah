@@ -2,31 +2,48 @@ import React from "react";
 
 const CodeDisplay = () => {
   const codeSnippet = `
-  import { toast } from "react-toastify";
+  import { Link, useNavigate, useLocation } from "react-router-dom";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
 
-const Logout = ({ setUser }) => {
+const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current URL path
 
   const handleLogout = () => {
-    setUser(null); // Clear user session
-    toast.error("Logged OUT", { position: "top-right", autoClose: 2000 });
+    toast.error("Logged out!!", { position: "top-right", autoClose: 2000 });
 
-    // Wait for toast to disappear before redirecting
     setTimeout(() => {
-      navigate("/login"); // Redirect to login page
-    }, 2000);
+      setIsLoggedIn(false);
+      navigate("/");
+    }, 2000); // Wait for toast to disappear before redirecting
   };
 
   return (
-    <button onClick={handleLogout} className="logout-btn">
-      Logout
-    </button>
+    <nav className="navbar">
+      <h1 className="logo">📚 Online Bookstore</h1>
+      <div className="nav-links">
+        {isLoggedIn ? (
+          <>
+            <Link to="/home">Home</Link>
+            <Link to="/book-of-the-day">Book of the Day</Link>
+            <Link to="/cart">Cart</Link>
+            {/* Hide Logout button on the Login page */}
+            {location.pathname !== "/login" && (
+              <button className="logout-btn" onClick={handleLogout}>
+                Logout
+              </button>
+            )}
+          </>
+        ) : (
+          location.pathname !== "/login" && <Link to="/login">Login</Link>
+        )}
+      </div>
+    </nav>
   );
 };
 
-export default Logout;
+export default Navbar;
 
   `;
 
