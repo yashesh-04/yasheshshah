@@ -1,12 +1,19 @@
 import React from "react";
 
 const CodeDisplay = () => {
-  const codeSnippet = `</div>
-          ))}
+  const codeSnippet = `{cart.length > 0 && (
+        <div className="cart-summary">
+          <h3>Total: <span className="total-price">${totalPrice.toFixed(2)}</span></h3>
+          <button className="checkout-btn" onClick={checkout}>
+            Checkout
+          </button>
         </div>
-      ) : (
-        <p className="empty-cart">Your cart is empty.</p>
-      )}          
+      )}
+    </div>
+  );
+};
+
+export default CartPage;     
 `;
 
   return (
