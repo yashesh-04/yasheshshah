@@ -1,7 +1,7 @@
 import React from "react";
 
 const CodeDisplay = () => {
-  const codeSnippet = `
+  const codeSnippet = `{
   /*{cart.length > 0 && (
         <div className="cart-summary">
           <h3>Total: <span className="total-price">${totalPrice.toFixed(2)}</span></h3>
@@ -14,7 +14,7 @@ const CodeDisplay = () => {
   );
 };
 
-export default CartPage; */`;
+export default CartPage; */}`;
 
   return (
     <pre>
