@@ -16,7 +16,7 @@ import ContactForm from './components/Main5';
 
 export default function App(){
 
-  console.log("import { BrowserRouter, Routes, Route } from "react-router-dom";
+  console.log('import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./pages/LandingPage";
@@ -52,7 +52,7 @@ function App() {
 }
 
 export default App;
-")
+')
   return (
     <>
       <Navigation/>
